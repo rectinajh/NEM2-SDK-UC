@@ -5,7 +5,6 @@ permalink: /lessons/Usecase_Account/
 ---
 
 
-
 # ACCOUNT
 
 - Language:TypeScript and JavaScript SDK 
@@ -20,7 +19,7 @@ permalink: /lessons/Usecase_Account/
 
 
 
-## **1. 多重签名 aggregatebonded
+## 1. Aggregatebonded(多重签名 )
 
 
 - Description : Fetch aggregate bonded transactions from account.  An **aggregate transaction** is**bonded** when it requires signatures from other participants. When sending an **aggregate bonded transaction**, an account must first announce and get confirmed a hash lock **transaction** for this **aggregate**with at least 10 XEM.
@@ -50,7 +49,7 @@ return CreateTransactionFromDTO(transactionDTO) as AggregateTransaction;
 
 ### **How to use**
 
-run javascript&javascript code
+run javascript&javascript code:
 
 ```javascript
 const accountAddress = Address.createFromRawAddress('SDRDGFTDLLCB67D4HPGIMIHPNSRYRJRT7DOBGWZY');
@@ -76,7 +75,7 @@ accountHttp
         err => console.error(err));
 ```
 
-## 2. Generate account
+## 2. Generate account(生成账户)
 
 - Description: Generate a new account address from the SDK
 - Code sample:
@@ -102,9 +101,9 @@ const address = Address.createFromPublicKey(convert.uint8ToHex(keyPair.publicKey
 return new Account(address, keyPair);
 }
 ```
-### **How to use **
+### How to use
 
-Run javascript&javascript code
+Run javascript&javascript code:
 
 ```
 const account = Account.generateNewAccount(NetworkType.MIJIN_TEST);
@@ -119,7 +118,7 @@ nem2-cli account generate
 
 
 
-## 3.获取账户信息 getaccountinfo
+## 3.Getaccountinfo(获取账户信息 )
 
 - Description : Fetch account info  获取账户信息  
 - Code sample 
@@ -169,7 +168,7 @@ const accountHttp = new AccountHttp(APIUrl);
     });    
 ```
 
-## 4.交易的接收者
+## 4.Incoming transactions(交易的接收者)
 - Description:Fetch incoming transactions from account 
    如果帐户是交易的接收者，则称交易相对于帐户进入。   
 - Class:TransactionRepository.ts  
@@ -222,7 +221,7 @@ const multisigPublicAccount = PublicAccount.createFromPublicKey('B694186EE4AB055
 
 
         
-## 5.交易的发送者
+## 5.Outgoing transactions(交易的发送者)
 
 - Description:Fetch outgoing transactions from account     如果帐户是交易的发送人，则称交易相对于帐户是外发的。   
 - Class:TransactionRepository.ts  
@@ -266,7 +265,7 @@ const multisigPublicAccount = PublicAccount.createFromPublicKey('B694186EE4AB055
 ```
 
 
-## 6.被确认的交易
+## 6.Confirmed transactions（未被确认的交易）
 
 - Description:Fetch transactions from account          返回已被确认的交易  
 - Class:TransactionRepository.ts 
@@ -316,10 +315,9 @@ it('should call transactions successfully', (done) => {
 
 
 
-## 7.未被确认的交易
+## 7.Unconfirmed transactions（未被确认的交易）
 
 - Description:Fetch unconfirmed transactions from account      返回未被确认的交易  
-- Class:TransactionRepository.ts  
 - Code sample 
 
 ```javascript
