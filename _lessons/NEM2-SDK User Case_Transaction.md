@@ -6,8 +6,6 @@ permalink: /lessons/Usecase_Tracsaction/
 
 
 
-
-
 # Transaction
 
 - Language:TypeScript and JavaScript SDK 
@@ -68,7 +66,7 @@ describe('announceAggregateBondedCosignature', () => {
     });
 ```
 
-## 2. info  
+## 2. Transaction info  
 
 
 - Description : Fetch Transaction info   
@@ -249,7 +247,7 @@ describe('NamespaceName', () => {
 
 
 
-## 5.transfer  
+## 5.Transfer  
 
 - Description: Send transfer transaction  
 
@@ -293,3 +291,4 @@ it('should call transactions successfully', (done) => {
             });
 
 ```
+
