@@ -5,7 +5,6 @@ permalink: /lessons/Usecase_Mintor/
 ---
 
 
-
 # Monitor
 
 - Language:TypeScript and JavaScript SDK 
@@ -13,13 +12,12 @@ permalink: /lessons/Usecase_Mintor/
 - MODEL:Monitor
 
 ## Prerequisites
-- Finish the getting started section
 - Text editor or IDE
 - NEM2-SDK or CLI
 - Description:you will receive a response if the change has been applied or failed due to some constraint.
 
 
-## **1. Aggregatebonded **
+## 1. Aggregate bonded
 
 - Description: Monitor aggregate bonded transactions added
 - Code sample:
@@ -384,6 +382,14 @@ describe('Listener', () => {
 }    
      
 ```
+
+
+
+
+
+
+
+
 
 
 
