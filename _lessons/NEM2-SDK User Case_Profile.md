@@ -5,9 +5,6 @@ permalink: /lessons/Usecase_Profile/
 ---
 
 
-
-
-
 # Profile
 
 - Language:TypeScript and JavaScript SDK 
@@ -22,7 +19,7 @@ permalink: /lessons/Usecase_Profile/
 
 
 
-## **1. create - Configure an account**
+## **1. Create - Configure an account**
 
 - Description: Creates a new profile.
 - Code sample:
@@ -43,9 +40,8 @@ Bash code:
 nem2-cli profile create -p 206CE7E4B16B48430FD2C216E4BB105564B21E21DEE196267B4B33C54F1023FC -n MIJIN_TEST -u http://localhost:3000
 ```
 
-![](https://upload-images.jianshu.io/upload_images/528413-00b283764729980d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 2.list   - Configure an account
+## 2.List   - Configure an account
 
 
 - Description : Gets the list of stored accounts.
@@ -54,12 +50,3 @@ nem2-cli profile create -p 206CE7E4B16B48430FD2C216E4BB105564B21E21DEE196267B4B3
 ```javascript
 nem2-cli profile list    
 ```
-
-
-![](https://upload-images.jianshu.io/upload_images/528413-32dc16fa6749d7da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
-
-
